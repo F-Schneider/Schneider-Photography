@@ -77,16 +77,36 @@ $("#backward_carousel").click( () => {
 })
 
 //social media
+if($(window).width() > 600) {
+  var social_clicked = false;
+  $(".show_social_media").click( () => {
+    if(social_clicked === false) {
+      $(".social_media_list").slideToggle(350);
+      social_clicked = true;
+      $(".show_social_media").css({'transform': 'rotate(-180deg)'})
+    } else if (social_clicked === true) {
+      $(".social_media_list").slideToggle(350);
+      $(".show_social_media").css({'transform': ''})
+      social_clicked = false;
+    }
+  });
+}
+//social media for mobile devices
 
-var social_clicked = false;
-$(".show_social_media").click( () => {
-  if(social_clicked === false) {
-    $(".social_media_list").slideToggle(350);
-    social_clicked = true;
-    $(".show_social_media").css({'transform': 'rotate(-180deg)'})
-  } else if (social_clicked === true) {
-    $(".social_media_list").slideToggle(350);
-    $(".show_social_media").css({'transform': ''})
-    social_clicked = false;
-  }
-});
+ if ($(window).width() < 600) {
+   $(".social_media_list").hide();
+   $(".show_social_media").css({"transform": "rotate(180deg)"});
+   var social_clicked = false;
+   $(".show_social_media").click( () => {
+     if(social_clicked === false) {
+       $(".show_social_media").css({"transform": ""});
+       $(".social_media_list").slideToggle(350);
+       social_clicked = true;
+     } else if(social_clicked === true) {
+       $(".show_social_media").css({"transform": "rotate(-180deg)"});
+       $(".social_media_list").slideToggle(350);
+       social_clicked = false;
+     }
+   })
+   console.log("worked");
+ }
