@@ -91,6 +91,7 @@ if($(window).width() > 600) {
     }
   });
 }
+
 //social media for mobile devices
 
  if ($(window).width() < 600) {
@@ -108,5 +109,4 @@ if($(window).width() > 600) {
        social_clicked = false;
      }
    })
-   console.log("worked");
  }
