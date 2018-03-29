@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link href="../css/gallery.css" rel="stylesheet">
+    <link href="../css/css_responsive/gallery_media_query.css" rel="stylesheet">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 id="header_logo"><a href="../../home/html/home.html">Schneider</a></h1>
+      <nav>
+        <label id="burger_icon" for="burger_icon_checkbox">&#9776;</label>
+        <input id="burger_icon_checkbox" type="checkbox"/>
+        <ul id="nav_ul">
+          <li><a href="../../home/html/home.html">Home</a></li>
+          <li id="nav_gallery"><a href="#">Gallery</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Block</a></li>
+          <li><a href="#" id="nav_login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <div class="filter_container">
+          <ul>
+            <li><a>Landscape</a></li>
+            <li><a>Architecture</a></li>
+            <li><a>Portrait</a></li>
+          </ul>
+        </div>
+        <div class="sidebar_btn">
+          <span id="btn_first"></span>
+          <span id="btn_second"></span>
+          <span id="btn_third"></span>
+        </div>
+      </div>
+      <div id="landscape">
+        <div class="wrapper" id="w1">
+          <div class="box one">
+            <div id="carousel_img_06" class="carousel_size"></div>
+          </div>
+          <div class="box two">
+            <div id="carousel_img_03" class="carousel_size"></div>
+          </div>
+          <div class="box three">
+            <div id="carousel_img_01" class="carousel_size"></div>
+          </div>
+          <div class="box four">
+            <div id="carousel_img_04" class="carousel_size"></div>
+          </div>
+          <div class="box five">
+            <div id="carousel_img_09" class="carousel_size"></div>
+          </div>
+        </div>
+        <div class="wrapper" id="w2">
+          <div class="box six">
+            <div id="carousel_img_02" class="carousel_size"></div>
+          </div>
+          <div class="box seven">
+            <div id="carousel_img_10" class="carousel_size"></div>
+          </div>
+          <div class="box eight">
+            <div id="carousel_img_05" class="carousel_size"></div>
+          </div>
+          <div class="box nine">
+            <div id="carousel_img_07" class="carousel_size"></div>
+          </div>
+          <div class="box ten">
+            <div id="carousel_img_11" class="carousel_size"></div>
+          </div>
+        </div>
+      </div>
+      <div id="architecture">
+      </div>
+      <div id="social_media_container">
+        <ul class="social_media">
+          <li><img  class="show_social_media" src="../../pictures/logos/social_media_logos/show_social_media.png"></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/02_facebook.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/01_twitter.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/03_youtube.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/10_instagram.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/13_pinterest.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/14_google+.png"></a></li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/gallery_jquery.js"></script>
+  </body>
+</html>
