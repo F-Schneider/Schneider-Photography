@@ -1,3 +1,13 @@
+@media only screen and (max-width: 4000px) {
+  main:hover #backward_carousel {
+    transform: translate(-500px);
+    opacity: .6;
+  }
+  main:hover #forward_carousel{
+    transform: translate(500px);
+    opacity: .6;
+  }
+}
 @media only screen and (min-width: 1500px) {
   header nav ul li a {
     margin: 0 30px;
@@ -67,20 +77,25 @@
 }
 @media only screen and (max-width: 600px) {
   #backward_carousel {
-    opacity: 0;
+    opacity: .6;
     left: 0;
-    margin-left: 100px;
-    transition: opacity 1000ms ease-in-out, transform 1000ms cubic-bezier(0.15, 1.18, 0.63, 0.99);
+    margin-left: 20px;
   }
-  body:hover #backward_carousel {
-    transform: translate(-80px);
+  #forward_carousel {
     opacity: .6;
+    right: 0;
+    margin-right: 50px;
   }
-  #forward_carousel #forward_logo {
+  #backward_carousel #backward_logo {
    width: 30px;
+ }
+ #forward_carousel #forward_logo {
+  width: 30px;
   }
-  body:hover #forward_carousel{
-    transform: translate(90px);
-    opacity: .6;
+  main:hover #forward_carousel {
+    transform: none;
+  }
+  main:hover #backward_carousel {
+    transform: none;
   }
 }

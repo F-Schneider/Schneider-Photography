@@ -132,14 +132,6 @@ main {
 #forward_carousel #forward_logo {
  width: 50px;
 }
-main:hover #backward_carousel {
-  transform: translate(-500px);
-  opacity: .6;
-}
-main:hover #forward_carousel{
-  transform: translate(500px);
-  opacity: .6;
-}
 
 /*social media*/
 #social_media_container {
