@@ -12,6 +12,26 @@
   header nav ul {
     margin-right: 10px;
   }
+  #backward_carousel {
+    margin-left: 100px;
+  }
+  #forward_carousel {
+    margin-right: 140px;
+  }
+  #backward_carousel #backward_logo {
+   width: 30px;
+ }
+ #forward_carousel #forward_logo {
+  width: 30px;
+}
+  main:hover #backward_carousel {
+    transform: translate(-80px);
+    opacity: .6;
+  }
+  main:hover #forward_carousel{
+    transform: translate(90px);
+    opacity: .6;
+  }
 }
 @media only screen and (max-width: 850px) {
   header {

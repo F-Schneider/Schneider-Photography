@@ -76,28 +76,6 @@ $("#backward_carousel").click( () => {
   timeout =setInterval(carousel, 5000);
 })
 
-
-//arrow animation
-/*var hovered = false;
-$(".arrow").hide();
-if(hovered === false)
-{
-  $("main").mouseover( () => {
-    $(".arrow").fadeIn();
-    $("#backward_carousel").addClass("arrow_animation_back");
-    $("#forward_carousel").addClass("arrow_animation_for");
-    hovered = true;
-  })
-}
-  $("main").mouseout( () => {
-    $("#backward_carousel").removeClass("arrow_animation_back");
-    $("#forward_carousel").removeClass("arrow_animation_for");
-    $(".arrow").fadeOut();
-  })
-  hovered = false;
-*/
-
-
 //social media
 
 var social_clicked = false;
