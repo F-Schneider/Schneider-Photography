@@ -102,9 +102,9 @@ main {
   background-position: center;
 }
 #carousel_img_01 {background-image: url("../../pictures/pictures_home/Funicular_01.jpg");}
-#carousel_img_02 {background-image: url("../../pictures/pictures_home/P07.JPG");}
-#carousel_img_03 {background-image: url("../../pictures/pictures_home/P10.JPG");}
-#carousel_img_04 {background-image: url("../../pictures/pictures_home/P04.JPG");}
+#carousel_img_02 {background-image: url("../../pictures/pictures_home/P07.jpg");}
+#carousel_img_03 {background-image: url("../../pictures/pictures_home/P10.jpg");}
+#carousel_img_04 {background-image: url("../../pictures/pictures_home/P04.jpg");}
 .arrow {
   display: block;
   cursor: pointer;
