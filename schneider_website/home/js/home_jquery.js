@@ -12,23 +12,18 @@ function show_list(name) {
 function hide_list(name) {
   if(animating) return;
   animating = true,
-  $(name).fadeOut(200, () => {animating = false; })
+  $(name).fadeOut(500, () => {animating = false; })
 }
 
 //resize function
-$(window).resize(function() {
- if ($(window).width() < 850) {
-   $("#nav_ul").hide();
-   $(burger_icon).click(function() {
-     show_list("#nav_ul")
-   })
-   $(burger_icon).click(function() {
-     hide_list("#nav_ul")
-   })
- } else {
-   $("#nav_ul").show();
-  }
-});
+if ($(window).width() < 850) {
+ $("#nav_ul").hide();
+  $(burger_icon).click(function() {
+    $("#nav_ul").slideToggle(550);
+  })
+} else {
+ $(".nav_li").show();
+}
 
 //image carousel
 var slideIndex = 0;
