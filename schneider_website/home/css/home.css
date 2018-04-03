@@ -104,7 +104,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: inset 0px 0px 67px 2px rgba(0,0,0,0.75);
-  background-color: black;
 }
 #carousel_img_01 {background-image: url("../../pictures/pictures_home/P1000510.JPG");}
 #carousel_img_02 {background-image: url("../../pictures/pictures_home/P07.JPG");}
