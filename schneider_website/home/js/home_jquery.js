@@ -16,14 +16,26 @@ function hide_list(name) {
 }
 
 //resize function
+$(window).resize(function(){
+  if($(window).width() < 850) {
+    $(burger_icon).click(function() {
+      $("#nav_ul").slideToggle(550);
+    })
+  } else {
+    $("#nav_ul").show();
+  }
+})
+
+//mobile device nav_bar animation
 if ($(window).width() < 850) {
- $("#nav_ul").hide();
+  $("#nav_ul").hide();
   $(burger_icon).click(function() {
     $("#nav_ul").slideToggle(550);
   })
 } else {
  $(".nav_li").show();
 }
+
 
 //image carousel
 var slideIndex = 0;

@@ -98,4 +98,13 @@
   main:hover #backward_carousel {
     transform: none;
   }
+  h2 {
+    font-size: 25px;
+    letter-spacing: 1.5rem;
+  }
+  .quote {
+    font-size: 10px;
+    line-height: 1rem;
+    letter-spacing: 5px;
+  }
 }
