@@ -15,26 +15,23 @@ function hide_list(name) {
   $(name).fadeOut(500, () => {animating = false; })
 }
 
-//resize function
-$(window).resize(function(){
-  if($(window).width() < 850) {
-    $(burger_icon).click(function() {
-      $("#nav_ul").slideToggle(550);
+//if there is no resize and screen size < 850
+if($(window).width() <= 850) {
+  $(burger_icon).on("click", () => {
+    $("#nav_ul").slideToggle(550)
     })
-  } else {
-    $("#nav_ul").show();
-  }
+} else {
+  $("#nav_ul").show();
+}
+
+//resize function
+$(window).on("resize", () => {
+  slided = true;
+  if($(window).width() <= 850) {
+    $("#nav_ul").hide();
+  } else{$("#nav_ul").show()}
 })
 
-//mobile device nav_bar animation
-if ($(window).width() < 850) {
-  $("#nav_ul").hide();
-  $(burger_icon).click(function() {
-    $("#nav_ul").slideToggle(550);
-  })
-} else {
- $(".nav_li").show();
-}
 
 
 //image carousel

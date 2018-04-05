@@ -73,7 +73,15 @@
   #burger_icon_checkbox:checked + #nav_ul {
     display: block;
   }
-
+  h2 {
+    font-size: 25px;
+    letter-spacing: 1.5rem;
+  }
+  .quote {
+    font-size: 10px;
+    line-height: 1rem;
+    letter-spacing: 5px;
+  }
 }
 @media only screen and (max-width: 600px) {
   #backward_carousel {
@@ -87,9 +95,11 @@
     margin-right: 50px;
   }
   #backward_carousel #backward_logo {
+    display: none;
    width: 30px;
  }
  #forward_carousel #forward_logo {
+   display: none;
   width: 30px;
   }
   main:hover #forward_carousel {
@@ -97,14 +107,5 @@
   }
   main:hover #backward_carousel {
     transform: none;
-  }
-  h2 {
-    font-size: 25px;
-    letter-spacing: 1.5rem;
-  }
-  .quote {
-    font-size: 10px;
-    line-height: 1rem;
-    letter-spacing: 5px;
   }
 }
