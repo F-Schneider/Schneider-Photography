@@ -141,7 +141,7 @@ $(".gps_icon").css({
    } else {
      $(coordinate).hide(750);
      $(".gps_icon").css({
-       "margin-right": "-12px",
+       "margin-right": "-13px",
      })
      gps_clicked = false;;
    }
