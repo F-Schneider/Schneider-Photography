@@ -127,20 +127,20 @@ if($(window).width() > 600) {
 
 var gps_clicked = false;
 $(".coordinates").hide();
-$(".gps_ul").css({
+$(".gps_icon").css({
   "margin-right": "-13px",
 })
 
  $(".gps_icon").click( () => {
    if(gps_clicked === false) {
-     $(".gps_ul").css({
+     $(".gps_icon").css({
        "margin-right": "",
      })
      $(coordinate).show(750)
      gps_clicked = true;
    } else {
      $(coordinate).hide(750);
-     $(".gps_ul").css({
+     $(".gps_icon").css({
        "margin-right": "-12px",
      })
      gps_clicked = false;;
