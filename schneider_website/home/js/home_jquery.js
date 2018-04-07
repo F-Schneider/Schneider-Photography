@@ -33,21 +33,28 @@ $(window).on("resize", () => {
 })
 
 
-
 //image carousel
+//coordinate slider
+var coordinate;
+
 var slideIndex = 0;
 var stop = false;
-var timeout = setInterval(carousel, 3000);
+var timeout = setInterval(carousel, 5000);
 carousel();
 function carousel() {
     var i;
     var x = $(".carousel_size");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
+      $(".coordinates").hide();
     }
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
+    coordinate = $(".coordinates")[slideIndex-1];
+    if(gps_clicked === true) {
+      $(coordinate).fadeIn(750);
+    }
     timeout;
      // Change image every 3 seconds
 }
@@ -114,3 +121,20 @@ if($(window).width() > 600) {
      }
    })
  }
+
+ //Coordinates animation
+
+var gps_clicked = false;
+$(".coordinates").hide();
+
+ $(".gps_icon").click( () => {
+   if(gps_clicked === false) {
+     $(coordinate).show(750)
+     gps_clicked = true;
+   } else {
+     $(coordinate).hide(750);
+     gps_clicked = false;;
+   }
+ })
+
+ //Coordinates slider

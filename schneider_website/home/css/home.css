@@ -137,23 +137,31 @@ h2 {
 .gps_container {
 }
 .gps_ul {
+  list-style: none;
   display: block;
   position: fixed;
   bottom: 0%;
   right: 0%;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  padding: 0;
 }
 .gps_ul li {
+  height: 32px;
+  text-align: center;
   display: inline-block;
 }
 .gps_icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: -23px;
+  margin-bottom: -9.5px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 .coordinates {
   text-shadow: 2px 2px 8px #111;
   color: white;
   font-size: 15px;
+  cursor: pointer;
 }
 .arrow {
   display: block;
