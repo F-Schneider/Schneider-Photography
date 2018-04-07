@@ -90,6 +90,7 @@ $("#backward_carousel").click( () => {
 //social media
 if($(window).width() > 600) {
   var social_clicked = false;
+  $(".show_social_media").css({"transform": "rotate(90deg)"});
   $(".show_social_media").click( () => {
     if(social_clicked === false) {
       $(".social_media_list").slideToggle(350);
@@ -97,7 +98,7 @@ if($(window).width() > 600) {
       $(".show_social_media").css({'transform': 'rotate(-90deg)'})
     } else if (social_clicked === true) {
       $(".social_media_list").slideToggle(350);
-      $(".show_social_media").css({'transform': ''})
+      $(".show_social_media").css({'transform': 'rotate(90deg)'})
       social_clicked = false;
     }
   });
@@ -126,13 +127,22 @@ if($(window).width() > 600) {
 
 var gps_clicked = false;
 $(".coordinates").hide();
+$(".gps_ul").css({
+  "margin-right": "-13px",
+})
 
  $(".gps_icon").click( () => {
    if(gps_clicked === false) {
+     $(".gps_ul").css({
+       "margin-right": "",
+     })
      $(coordinate).show(750)
      gps_clicked = true;
    } else {
      $(coordinate).hide(750);
+     $(".gps_ul").css({
+       "margin-right": "-12px",
+     })
      gps_clicked = false;;
    }
  })

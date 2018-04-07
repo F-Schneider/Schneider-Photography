@@ -145,6 +145,7 @@ h2 {
   margin: 0 auto;
   margin-bottom: 4px;
   padding: 0;
+  cursor: pointer;
 }
 .gps_ul li {
   height: 32px;
