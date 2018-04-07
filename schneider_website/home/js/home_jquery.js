@@ -94,7 +94,7 @@ if($(window).width() > 600) {
     if(social_clicked === false) {
       $(".social_media_list").slideToggle(350);
       social_clicked = true;
-      $(".show_social_media").css({'transform': 'rotate(-180deg)'})
+      $(".show_social_media").css({'transform': 'rotate(-90deg)'})
     } else if (social_clicked === true) {
       $(".social_media_list").slideToggle(350);
       $(".show_social_media").css({'transform': ''})
@@ -107,15 +107,15 @@ if($(window).width() > 600) {
 
  if ($(window).width() < 600) {
    $(".social_media_list").hide();
-   $(".show_social_media").css({"transform": "rotate(180deg)"});
+   $(".show_social_media").css({"transform": "rotate(-90deg)"});
    var social_clicked = false;
    $(".show_social_media").click( () => {
      if(social_clicked === false) {
-       $(".show_social_media").css({"transform": ""});
+       $(".show_social_media").css({"transform": "rotate(90deg)"});
        $(".social_media_list").slideToggle(350);
        social_clicked = true;
      } else if(social_clicked === true) {
-       $(".show_social_media").css({"transform": "rotate(-180deg)"});
+       $(".show_social_media").css({"transform": "rotate(-90deg)"});
        $(".social_media_list").slideToggle(350);
        social_clicked = false;
      }
