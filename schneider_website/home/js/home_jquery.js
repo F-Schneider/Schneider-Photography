@@ -36,6 +36,7 @@ $(window).on("resize", () => {
 //image carousel
 //coordinate slider
 var coordinate;
+var current_index;
 
 var slideIndex = 0;
 var stop = false;
@@ -50,7 +51,22 @@ function carousel() {
     }
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
+    $(".current_index").css({
+      "background-color": "",
+      "width": "",
+      "height": "",
+      "border": "solid 1px rgba(255, 255, 255, 0.3)",
+    });
+    current_index = $(".current_index")[slideIndex-1];
+    $(current_index).css({
+      "background-color": "rgba(255, 255, 255, 0.3)",
+      "width": "9px",
+      "height": "9px",
+      "border": "none",
+    });
+
     x[slideIndex-1].style.display = "block";
+
     coordinate = $(".coordinates")[slideIndex-1];
     if(gps_clicked === true) {
       $(coordinate).fadeIn(750);
