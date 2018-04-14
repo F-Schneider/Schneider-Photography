@@ -55,11 +55,11 @@ function carousel() {
       "background-color": "",
       "width": "",
       "height": "",
-      "border": "solid 1px rgba(255, 255, 255, 0.6)",
+      "border": "solid 1px rgba(255, 255, 255)",
     });
     current_index = $(".current_index")[slideIndex-1];
     $(current_index).css({
-      "background-color": "rgba(255, 255, 255, 0.3)",
+      "background-color": "rgba(255, 255, 255, 0.6)",
       "width": "9px",
       "height": "9px",
       "border": "none",
