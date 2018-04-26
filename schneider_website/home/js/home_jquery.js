@@ -19,7 +19,7 @@ function hide_list(name) {
 //if scrolled than hide the navigation bar
 $(window).scroll( () => {
   $("#nav_ul").slideToggle(550)
-}
+})
 
 //if there is no resize and screen size < 850
 if($(window).width() <= 850) {
