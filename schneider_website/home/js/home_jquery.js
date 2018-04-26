@@ -1,4 +1,4 @@
-alert("upload_39")
+alert("upload_40")
 var animating = false;
 var burger_icon = $("#burger_icon")
 
@@ -16,6 +16,16 @@ $(window).on("resize", () => {
   if($(window).width() <= 850) {
   } else{$("#nav_ul").show()}
 })
+
+//if scrolled than hide navigation bar
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  if(scroll > 50) {
+    $("#nav_ul").slideToggle();
+  }
+})
+
 
 
 //image carousel
