@@ -2,11 +2,6 @@ alert("upload_36")
 var animating = false;
 var burger_icon = $("#burger_icon")
 
-//if scrolled than hide the navigation bar
-$(window).scroll( () => {
-  $("#nav_ul").slideToggle(550)
-})
-
 //if there is no resize and screen size < 850
 if($(window).width() <= 850) {
   $(burger_icon).on("click", () => {
