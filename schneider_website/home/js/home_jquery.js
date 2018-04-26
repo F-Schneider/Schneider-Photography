@@ -2,20 +2,6 @@ alert("upload_36")
 var animating = false;
 var burger_icon = $("#burger_icon")
 
-//function for appending the navigation bar
-function show_list(name) {
-  if(animating) return;
-  animating = true;
-  $(name).fadeIn(500, () => {animating = false; })
-}
-
-//function for hiding the navigation bar
-function hide_list(name) {
-  if(animating) return;
-  animating = true,
-  $(name).fadeOut(500, () => {animating = false; })
-}
-
 //if scrolled than hide the navigation bar
 $(window).scroll( () => {
   $("#nav_ul").slideToggle(550)
@@ -32,9 +18,7 @@ if($(window).width() <= 850) {
 
 //resize function
 $(window).on("resize", () => {
-  slided = true;
   if($(window).width() <= 850) {
-    $("#nav_ul").hide();
   } else{$("#nav_ul").show()}
 })
 
