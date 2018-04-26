@@ -1,4 +1,4 @@
-alert("version 32");
+alert("upload_36")
 var animating = false;
 var burger_icon = $("#burger_icon")
 
@@ -14,6 +14,11 @@ function hide_list(name) {
   if(animating) return;
   animating = true,
   $(name).fadeOut(500, () => {animating = false; })
+}
+
+//if scrolled than hide the navigation bar
+$(window).scroll( () => {
+  $("#nav_ul").slideToggle(550)
 }
 
 //if there is no resize and screen size < 850
