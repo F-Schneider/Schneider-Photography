@@ -146,14 +146,13 @@ h2 {
   margin: 0 auto;
   padding: 0;
   cursor: pointer;
-  height: 32px;
+  height: 36px;
 }
 .gps_ul li {
   text-align: center;
   display: inline-block;
 }
 .gps_icon {
-  margin-bottom: -4px;
   width: 36px;
   height: 36px;
   cursor: pointer;
@@ -165,7 +164,6 @@ h2 {
   cursor: pointer;
 }
 .coordinates_li {
-  height
 }
 .arrow {
   display: block;

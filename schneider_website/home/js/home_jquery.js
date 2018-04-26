@@ -1,4 +1,3 @@
-alert("upload_40")
 var animating = false;
 var burger_icon = $("#burger_icon")
 
@@ -22,7 +21,7 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   if(scroll > 50) {
-    $("#nav_ul").slideToggle();
+    $("#nav_ul").hide(500);
   }
 })
 
@@ -147,7 +146,7 @@ $(".gps_icon").css({
      $(".gps_icon").css({
        "margin-right": "",
      })
-     $(coordinate).show(750)
+     $(coordinate).fadeIn()
      gps_clicked = true;
    } else {
      $(coordinate).hide(750);
