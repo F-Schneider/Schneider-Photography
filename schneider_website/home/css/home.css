@@ -7,7 +7,9 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #2d2d2d;
-  /*overflow: hidden;*/
+}
+body {
+  overflow: auto;
 }
 html {
   font-family: 'Quicksand', sans-serif;
@@ -139,16 +141,16 @@ h2 {
 .gps_container {
   display: block;
   position: fixed;
-  bottom: 0%;
-  right: 0%;
+  bottom: 1%;
+  right: 1%;
   height: 36px;
 }
 .gps_ul {
   list-style: none;
   display: block;
   position: fixed;
-  bottom: 0%;
-  right: 0%;
+  bottom: 1%;
+  right: 1%;
   margin: 0 auto;
   padding: 0;
   cursor: pointer;
@@ -162,6 +164,7 @@ h2 {
   width: 36px;
   height: 36px;
   cursor: pointer;
+  border-radius: 50%;
 }
 .coordinates {
   text-shadow: 2px 2px 8px #111;
@@ -207,7 +210,7 @@ h2 {
 .social_media {
   list-style: none;
   position: fixed;
-  bottom: 0%;
+  bottom: 1%;
   left: 0%;
   margin: 0 auto;
   padding: 0;
