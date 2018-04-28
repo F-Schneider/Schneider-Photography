@@ -21,7 +21,7 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   if(scroll > 50) {
-    $("#nav_ul").hide();
+    $("#nav_ul").hide(500);
   }
 })
 
@@ -138,18 +138,16 @@ if($(window).width() > 600) {
 var gps_clicked = false;
  $(".gps_icon").click( () => {
    if(gps_clicked === false) {
-     $(".gps_icon").slideToggle(250)
-     $(".gps_icon").slideToggle(150)
      $(".gps_icon").animate({
        "margin-left": "-280px"
-     }, 350)
-     $(coordinate).fadeIn(1000);
+     }, 150)
+     $(coordinate).fadeIn(500);
      gps_clicked = true;
    } else {
      $(coordinate).fadeOut(150);
      $(".gps_icon").animate({
        "margin-left": ""
-     }, 500)
+     }, 250)
      gps_clicked = false;
    }
  })
