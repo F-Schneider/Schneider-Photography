@@ -21,7 +21,7 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   if(scroll > 50) {
-    $("#nav_ul").hide(500);
+    $("#nav_ul").hide();
   }
 })
 
@@ -63,7 +63,7 @@ function carousel() {
 
     coordinate = $(".coordinates")[slideIndex-1];
     if(gps_clicked === true) {
-      $(coordinate).fadeIn(750);
+      $(coordinate).show();
     }
     timeout;
      // Change image every 3 seconds
@@ -136,24 +136,28 @@ if($(window).width() > 600) {
  //Coordinates animation
 
 var gps_clicked = false;
-$(".coordinates").hide();
-$(".gps_icon").css({
-  "margin-right": "-13px",
-})
-
  $(".gps_icon").click( () => {
    if(gps_clicked === false) {
-     $(".gps_icon").css({
-       "margin-right": "",
-     })
-     $(coordinate).fadeIn()
+     $(".gps_icon").slideToggle(250)
+     $(".gps_icon").slideToggle(150)
+     $(".gps_icon").animate({
+       "margin-left": "-280px"
+     }, 350)
+     $(coordinate).fadeIn(1000);
      gps_clicked = true;
    } else {
-     $(coordinate).hide(750);
-     $(".gps_icon").css({
-       "margin-right": "-13px",
-     })
-     gps_clicked = false;;
+     $(coordinate).fadeOut(150);
+     $(".gps_icon").animate({
+       "margin-left": ""
+     }, 500)
+     gps_clicked = false;
+   }
+ })
+
+ //Coordinates if window size below 650px
+
+ $(window).on("resize", () => {
+   if($(window).width() <= 650) {
    }
  })
 

@@ -135,7 +135,13 @@ h2 {
   text-shadow: 2px 2px 8px #111;
   line-height: 3rem;
 }
+/*gps coordinates*/
 .gps_container {
+  display: block;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  height: 36px;
 }
 .gps_ul {
   list-style: none;
@@ -162,8 +168,7 @@ h2 {
   color: white;
   font-size: 15px;
   cursor: pointer;
-}
-.coordinates_li {
+  margin-top: 8px;
 }
 .arrow {
   display: block;
@@ -229,18 +234,16 @@ h2 {
   margin: 0 auto;
   position: fixed;
   padding: none;
-  bottom: 0%;
+  bottom: 5%;
   left: 0;
   right: 0%;
   height: 36px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6)
 }
 .current_index {
   cursor: pointer;
   display: inline-block;
   margin: 8px;
-  margin-bottom: -8px;
   height: 7px;
   width: 7px;
   border: solid 1px rgba(255, 255, 255);
