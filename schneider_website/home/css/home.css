@@ -57,9 +57,6 @@ html {
   top: 25%;
   text-align: center;
   padding: 20px;
-  -webkit-box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
--moz-box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
-box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
 }
 .outer_ellipse_thin {
   display: inline-block;

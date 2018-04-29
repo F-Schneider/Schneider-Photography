@@ -19,6 +19,18 @@
   }
 }
 @media only screen and (max-width: 1000px) {
+  .wrapper {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    padding: 20px;
+    -webkit-box-shadow: none;
+  }
+  #enter {
+    font-size: 20px;
+  }
   header nav ul {
     margin-right: 10px;
   }
