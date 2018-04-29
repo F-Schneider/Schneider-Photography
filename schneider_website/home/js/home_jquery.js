@@ -69,34 +69,6 @@ function carousel() {
      // Change image every 3 seconds
 }
 
-$("#forward_carousel").click( () => {
-  //sets timeout back and starts
-  clearTimeout(timeout);
-  timeout = 0;
-  var i;
-  var x = $(".carousel_size");//class for the pictures in carousel
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  timeout =setInterval(carousel, 5000);
-})
-$("#backward_carousel").click( () => {
-  clearTimeout(timeout);
-  timeout = 0;
-  var i;
-  var x = $(".carousel_size");//class for the pictures in carousel
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex--;
-  if (slideIndex <= 0){slideIndex = x.length}
-  x[slideIndex-1].style.display = "block";
-  timeout =setInterval(carousel, 5000);
-})
-
 //social media
 if($(window).width() > 600) {
   var social_clicked = false;
@@ -115,7 +87,6 @@ if($(window).width() > 600) {
 }
 
 //social media for mobile devices
-
  if ($(window).width() < 600) {
    $(".social_media_list").hide();
    $(".show_social_media").css({"transform": "rotate(-90deg)"});
@@ -134,14 +105,13 @@ if($(window).width() > 600) {
  }
 
  //Coordinates animation
-
 var gps_clicked = false;
  $(".gps_icon").click( () => {
    if(gps_clicked === false) {
      $(".gps_icon").animate({
        "margin-left": "-280px"
      }, 150)
-     $(coordinate).fadeIn(500);
+     $(coordinate).fadeIn(200);
      gps_clicked = true;
    } else {
      $(coordinate).fadeOut(150);
@@ -153,10 +123,31 @@ var gps_clicked = false;
  })
 
  //Coordinates if window size below 650px
-
  $(window).on("resize", () => {
    if($(window).width() <= 650) {
    }
  })
 
  //Coordinates slider
+$(".current_index").eq(0).click(() => {
+  slideIndex = 0;
+  clearTimeout(timeout);
+  timeout = 0;
+  timeout =setInterval(carousel, 5000);
+  carousel();
+
+})
+$(".current_index").eq(1).click(() => {
+  slideIndex = 1;
+  clearTimeout(timeout);
+  timeout = 0;
+  timeout =setInterval(carousel, 5000);
+  carousel();
+})
+$(".current_index").eq(2).click(() => {
+  slideIndex = 2;
+  clearTimeout(timeout);
+  timeout = 0;
+  timeout =setInterval(carousel, 5000);
+  carousel();
+})
