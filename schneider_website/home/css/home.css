@@ -42,7 +42,7 @@ html {
   position: relative;
   top: 40%;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   color: #3d3d3d;
   letter-spacing: 5px;
@@ -54,7 +54,7 @@ html {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 35%;
+  top: 25%;
   text-align: center;
   padding: 20px;
   -webkit-box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
@@ -63,24 +63,16 @@ box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
 }
 .outer_ellipse_thin {
   display: inline-block;
-  position: relative: ;
   border-radius: 50%;
-  border: solid 5px transparent;
-  border-left-color: #3d3d3d;
-  border-right-color: #3d3d3d;
-  width: 150px;
+  border: solid 1.3px transparent;
+  border-left-color: #258B8D;
+  border-right-color: #258B8D;
+  border-top-color:#3d3d3d;
+  border-bottom-color: #3d3d3d;
+  width: 151px;
   height: 150px;
   opacity: .7;
   animation: ellipseRotate 15s ease-in-out infinite;
-}
-.outer_ellipse_thick {
-  display: inline-block;
-  position: relative;
-  border: solid 1px #3d3d3d;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  animation: ellipseOrbit 10s ease-in-out infinite;
 }
 .inner_ellipse {
   display: inline-block;
