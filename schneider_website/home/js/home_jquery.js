@@ -110,14 +110,14 @@ var gps_clicked = false;
    if(gps_clicked === false) {
      $(".gps_icon").animate({
        "margin-left": "-280px"
-     }, 150)
-     $(coordinate).fadeIn(200);
+     })
+     $(coordinate).fadeIn(1000);
      gps_clicked = true;
    } else {
-     $(coordinate).fadeOut(150);
+     $(coordinate).fadeOut(250);
      $(".gps_icon").animate({
        "margin-left": ""
-     }, 250)
+     })
      gps_clicked = false;
    }
  })
