@@ -15,20 +15,101 @@ html {
 }
 /*preloader*/
 .preloader_container {
+  overflow: hidden;
   display: block;
+  position: relative;
   margin: 0 auto;
   background-color: black;
   text-align: center;
   width: 100%;
   height: 100%;
 }
+.preload_heading {
+  display: block;
+  position: relative;
+  top: 5%;
+  margin: 0 auto;
+  font-size: 40px;
+  cursor: pointer;
+  color: #1d1d1d;
+  opacity: .4;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
 #enter {
   display: block;
   position: relative;
-  top: 50%;
+  top: 40%;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
+  color: #3d3d3d;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+/*ellipse animation*/
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 35%;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
+-moz-box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
+box-shadow: 0px -4px 121px -22px rgba(25,25,25,1);
+}
+.outer_ellipse_thin {
+  display: inline-block;
+  position: relative: ;
+  border-radius: 50%;
+  border: solid 5px transparent;
+  border-left-color: #3d3d3d;
+  border-right-color: #3d3d3d;
+  width: 150px;
+  height: 150px;
+  opacity: .7;
+  animation: ellipseRotate 15s ease-in-out infinite;
+}
+.outer_ellipse_thick {
+  display: inline-block;
+  position: relative;
+  border: solid 1px #3d3d3d;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: ellipseOrbit 10s ease-in-out infinite;
+}
+.inner_ellipse {
+  display: inline-block;
+  position: relative;
+  border: solid 0px white;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://s29.postimg.org/5h0r4ftkn/ellipses_dial.png");
+}
+
+@keyframes ellipseRotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes ellipseOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(405deg)
+  }
 }
 /*content*/
 .content {
