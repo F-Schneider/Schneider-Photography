@@ -244,6 +244,16 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: inset 0px 0px 67px 2px rgba(0,0,0,0.75);
+  animation: carousel_animation 800ms ease-in-out;
+}
+@keyframes carousel_animation {
+  0% {
+    opacity: .3;
+  }
+  100% {
+    margin: 0;
+    opacity: 1;
+  }
 }
 #carousel_img_01 {background-image: url("../../pictures/pictures_home/P1000510.JPG");}
 #carousel_img_02 {background-image: url("../../pictures/pictures_home/P07.JPG");}
@@ -254,6 +264,15 @@ main {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  animation: quote_animation 1000ms ease-in-out;
+}
+@keyframes quote_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .vertical_align {
 }
@@ -266,6 +285,7 @@ h2 {
   letter-spacing: 3rem;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 2px 2px 8px #111;
+  animation: h2_animation 600ms ease-in-out;
 }
 .quote {
   color: white;
@@ -273,6 +293,19 @@ h2 {
   letter-spacing: 10px;
   text-shadow: 2px 2px 8px #111;
   line-height: 3rem;
+  animation: p_animation 1000ms ease-in-out;
+}
+@keyframes p_animation {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    margin-right: 50px;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*gps coordinates*/
 .gps_container {
