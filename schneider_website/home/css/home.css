@@ -36,7 +36,6 @@ html {
   letter-spacing: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  text-decoration: line-through;
 }
 .enter_animation_arrive {
   animation: enter_animation_arrive 500ms ease-in-out;
@@ -251,7 +250,6 @@ main {
     opacity: .3;
   }
   100% {
-    margin: 0;
     opacity: 1;
   }
 }
@@ -301,7 +299,7 @@ h2 {
   }
   70% {
     opacity: 0;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   100% {
     opacity: 1;
