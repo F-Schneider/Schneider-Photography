@@ -13,10 +13,10 @@ $(window).on("load", () => {
     $(".outer_ellipse_thin").addClass("ellipse_animation_leave");
     $(".preloader_container").slideToggle(1500);
     $(".content").show();
-    animation_timeout = setTimeout(timeout, 4000);
+    animation_timeout = setTimeout(timeout, 3000);
     function timeout() {
     }
-    $(".loading_animation").addClass("append_buttons")
+    $(".loading_animation").addClass("append_buttons");
     $(".loading_animation").show()
 
   })

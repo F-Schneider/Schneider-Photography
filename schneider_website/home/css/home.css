@@ -283,7 +283,15 @@ h2 {
   letter-spacing: 3rem;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 2px 2px 8px #111;
-  animation: h2_animation 600ms ease-in-out;
+  animation: h2_animation 3000ms ease-in-out;
+}
+@keyframes h2_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .quote {
   color: white;
@@ -426,7 +434,6 @@ h2 {
 @keyframes append_buttons {
   0% {
     opacity: 0;
-    margin-bottom: -100px;
   }
   80% {
     opacity: 0;
