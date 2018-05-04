@@ -1,5 +1,4 @@
 
-
 var animating = false;
 var burger_icon = $("#burger_icon")
 
@@ -113,7 +112,7 @@ var gps_clicked = false;
      $(".gps_icon").animate({
        "margin-left": "-280px"
      })
-     $(coordinate).fadeIn();
+     $(coordinate).show();
      gps_clicked = true;
    } else {
      $(coordinate).fadeOut(250);

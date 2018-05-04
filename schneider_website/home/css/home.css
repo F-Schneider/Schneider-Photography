@@ -299,7 +299,6 @@ h2 {
   }
   70% {
     opacity: 0;
-    margin-right: 20px;
   }
   100% {
     opacity: 1;
@@ -422,7 +421,7 @@ h2 {
 }
 /*animation for buttons after preloading*/
 .append_buttons {
-  animation: append_buttons 2000ms ease-in-out;
+  animation: append_buttons 1500ms ease-in-out;
 }
 @keyframes append_buttons {
   0% {
