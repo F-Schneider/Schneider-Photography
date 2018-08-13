@@ -1,4 +1,3 @@
-$(".content").hide()
 $("#enter").hide()
 $(".loading_animation").hide();
 
@@ -11,12 +10,10 @@ $(window).on("load", () => {
   $("#enter").on("click", function animating() {
     $("#enter").addClass("enter_animation_leave");
     $(".outer_ellipse_thin").addClass("ellipse_animation_leave");
-    $(".preloader_container").slideToggle(1500);
-    $(".content").show();
-    animation_timeout = setTimeout(timeout, 3000);
-    function timeout() {
-    }
-    $(".loading_animation").addClass("append_buttons");
+    $(".preloader_container").addClass("preloader_leave");
+    $(".preloader_container").fadeOut(1000);
+
+    $(".loading_animation").stop().addClass("append_buttons");
     $(".loading_animation").show()
 
   })
