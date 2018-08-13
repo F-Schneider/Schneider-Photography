@@ -1,9 +1,18 @@
 $("#enter").hide()
 $(".loading_animation").hide();
-$(".content").hide();
+
+window.addEventListener("scroll", preventMotion, false);
+window.addEventListener("touchmove", preventMotion, false);
+
+function preventMotion(event)
+{
+    window.scrollTo(0, 0);
+    event.preventDefault();
+    event.stopPropagation();
+}
 
 var animation_timeout;
-alert("This is upload 68");
+alert("This is upload 69");
 $(window).on("load", () => {
   $(".content").css({"display": "block"})
   $("#enter").addClass("enter_animation_arrive")
