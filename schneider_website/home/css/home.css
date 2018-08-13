@@ -15,11 +15,11 @@ html {
 }
 /*preloader*/
 .preloader_container {
-  overflow-y: hidden;
-  scroll-behavior: smooth;
   display: block;
-  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth;
   margin: 0 auto;
+  position: relative;
   background-color: #191919;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.64);
   text-align: center;
