@@ -3,7 +3,7 @@ $(".loading_animation").hide();
 $(".content").hide();
 
 var animation_timeout;
-alert("This is upload 67");
+alert("This is upload 68");
 $(window).on("load", () => {
   $(".content").css({"display": "block"})
   $("#enter").addClass("enter_animation_arrive")
