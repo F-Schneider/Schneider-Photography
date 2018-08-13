@@ -1,7 +1,7 @@
 $("#enter").hide()
 $(".loading_animation").hide();
 var animation_timeout;
-
+alert("This is upload 63");
 $(window).on("load", () => {
 
   $("#enter").addClass("enter_animation_arrive")
