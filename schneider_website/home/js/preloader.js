@@ -1,5 +1,6 @@
 $("#enter").hide()
 $(".loading_animation").hide();
+$(".content").hide();
 
 var animation_timeout;
 alert("This is upload 66");
