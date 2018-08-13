@@ -1,10 +1,10 @@
 $("#enter").hide()
 $(".loading_animation").hide();
+$(".content").hide();
 
 var animation_timeout;
-alert("This is upload 70");
+alert("This is upload 71");
 $(window).on("load", () => {
-  $(".content").css({"display": "block"})
   $("#enter").addClass("enter_animation_arrive")
   $("#enter").fadeIn()
   $("#enter").on("click", function animating() {
