@@ -149,6 +149,7 @@ html {
 /*content*/
 .content {
   background-color: #3d3d3d;
+  display: none;
 }
 /*HEADER*/
 header {
