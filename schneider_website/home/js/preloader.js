@@ -1,6 +1,5 @@
 $("#enter").hide()
 $(".loading_animation").hide();
-
 var animation_timeout;
 
 $(window).on("load", () => {

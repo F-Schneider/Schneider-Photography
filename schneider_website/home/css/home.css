@@ -15,7 +15,7 @@ html {
 }
 /*preloader*/
 .preloader_container {
-  overflow: visible;
+  overflow: hidden;
   display: block;
   position: relative;
   margin: 0 auto;
