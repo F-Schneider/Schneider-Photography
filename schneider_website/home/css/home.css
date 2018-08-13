@@ -15,7 +15,8 @@ html {
 }
 /*preloader*/
 .preloader_container {
-  overflow: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
   display: block;
   position: relative;
   margin: 0 auto;
@@ -149,7 +150,7 @@ html {
 /*content*/
 .content {
   background-color: #3d3d3d;
-  display: none;
+  display: block;
 }
 /*HEADER*/
 header {
