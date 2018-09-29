@@ -1,4 +1,3 @@
-
 var animating = false;
 var burger_icon = $("#burger_icon")
 

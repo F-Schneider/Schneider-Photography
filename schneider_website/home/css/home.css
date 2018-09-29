@@ -26,6 +26,23 @@ html {
   width: 100%;
   height: 100%;
 }
+.preloader_container_wait {
+  animation: preloader_container_wait 4000ms ease-in-out;
+  visibility: hidden;
+}
+@keyframes preloader_container_wait {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: block;
+  }
+}
 #enter {
   display: block;
   position: relative;
@@ -39,34 +56,36 @@ html {
   font-weight: 500;
 }
 .enter_animation_arrive {
-  animation: enter_animation_arrive 450ms ease-in-out;
+  animation: enter_animation_arrive 650ms ease-in-out;
 }
 @keyframes enter_animation_arrive {
   0% {
-    right: 10%;
+    top: 5%;
+    opacity: 0;
   }
-  80% {
-    transform: scale(1.3)
+  70% {
+    opacity: 0;
   }
   100% {
     right: 0%;
   }
 }
 .enter_animation_leave {
-  animation: enter_animation_leave 450ms ease-in-out;
+  animation: enter_animation_leave 650ms ease-in-out;
   opacity: 0;
 }
 @keyframes enter_animation_leave {
   0% {
     opacity: 1;
-    transform: scale(1.5)
   }
-  30% {
-    margin: 0;
+  40% {
+    opacity: 0;
+  }
+  90 {
+    opacity: 0;
   }
   100% {
     opacity: 0;
-    left: 10%;
   }
 }
 /*ellipse animation*/
@@ -109,7 +128,7 @@ html {
   }
 }
 .ellipse_animation_leave {
-  animation: ellipse_leave 2000ms ease-in-out;
+  animation: ellipse_leave 1300ms ease-in-out;
   opacity: 0;
 }
 @keyframes ellipse_leave {
@@ -117,19 +136,23 @@ html {
     margin: 0;
     opacity: 1;
   }
-  30% {
+  20% {
     border-left-color: green;
     border-right-color: green;
   }
-  50% {
+  /*30% {
+    border-left-color: purple;
+    border-right-color: pink;
+  }*/
+  40% {
     border-left-color: red;
     border-right-color: red;
   }
-  70% {
+  50% {
     opacity: 0;
   }
   100% {
-    transform: rotate(-500deg) scale(1.8);
+    transform: rotate(-700deg) scale(1.5);
     opacity: 0;
   }
 }
@@ -310,6 +333,22 @@ h2 {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+/*loading_animation for button appending after preloading*/
+.loading_animation{
+  display: block;
+  animation: loading_animation 2000ms ease-in-out;
+}
+@keyframes loading_animation {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
     opacity: 1;
   }
 }
