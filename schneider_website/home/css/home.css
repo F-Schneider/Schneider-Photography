@@ -16,7 +16,6 @@ html {
 /*preloader*/
 .preloader_container {
   display: block;
-  overflow: hidden;
   scroll-behavior: smooth;
   margin: 0 auto;
   position: relative;
@@ -25,23 +24,6 @@ html {
   text-align: center;
   width: 100%;
   height: 100%;
-}
-.preloader_container_wait {
-  animation: preloader_container_wait 4000ms ease-in-out;
-  visibility: hidden;
-}
-@keyframes preloader_container_wait {
-  0% {
-    visibility: visible;
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: block;
-  }
 }
 #enter {
   display: block;
@@ -172,6 +154,7 @@ html {
 }
 /*content*/
 .content {
+  display: block;
   background-color: #3d3d3d;
   display: block;
 }
@@ -339,18 +322,6 @@ h2 {
 /*loading_animation for button appending after preloading*/
 .loading_animation{
   display: block;
-  animation: loading_animation 2000ms ease-in-out;
-}
-@keyframes loading_animation {
-  0%{
-    opacity: 0;
-  }
-  80%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
 }
 /*gps coordinates*/
 .gps_container {
