@@ -156,7 +156,20 @@ html {
 .content {
   display: block;
   background-color: #3d3d3d;
-  display: block;
+  opacity: 0;
+}
+.content_fade_in {
+  animation: content_fade_in 1000ms ease-in-out;
+  opacity: 1;
+}
+@keyframes content_fade_in {
+  0%{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*HEADER*/
 header {
