@@ -122,10 +122,6 @@ html {
     border-left-color: green;
     border-right-color: green;
   }
-  /*30% {
-    border-left-color: purple;
-    border-right-color: pink;
-  }*/
   40% {
     border-left-color: red;
     border-right-color: red;
@@ -156,7 +152,7 @@ html {
 .content {
   display: block;
   background-color: #3d3d3d;
-  opacity: 0;
+  opacity: 1;/*THIS HAS TO BE 1 AFTER TEST AFTER EDITING*/
 }
 .content_fade_in {
   animation: content_fade_in 1000ms ease-in-out;
@@ -261,7 +257,6 @@ main {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  /*box-shadow: inset 0px 0px 67px 2px rgba(0,0,0,0.75);*/
   animation: carousel_animation 800ms ease-in-out;
 }
 @keyframes carousel_animation {
@@ -434,12 +429,12 @@ h2 {
 .current_index_container {
   display: block;
   margin: 0 auto;
-  position: fixed;
   padding: none;
-  bottom: 5%;
-  left: 0;
-  right: 0%;
   height: 36px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 20%;
   text-align: center;
 }
 .current_index {
@@ -450,20 +445,5 @@ h2 {
   width: 7px;
   border: solid 1px rgba(255, 255, 255);
   border-radius: 50%;
-}
-/*animation for buttons after preloading*/
-.append_buttons {
-  animation: append_buttons 1500ms ease-in-out;
-}
-@keyframes append_buttons {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 /*FOOTER*/
