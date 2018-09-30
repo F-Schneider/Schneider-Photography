@@ -434,7 +434,7 @@ h2 {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 20%;
+  bottom: 10%;
   text-align: center;
 }
 .current_index {
@@ -447,3 +447,9 @@ h2 {
   border-radius: 50%;
 }
 /*FOOTER*/
+.test_container {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 40px;
+}
