@@ -1,5 +1,5 @@
 var animating = false;
-var burger_icon = $("#burger_icon")
+var burger_icon = $("#burger_icon");
 
 //if there is no resize and screen size < 850
 if($(window).width() <= 850) {
@@ -17,15 +17,34 @@ $(window).on("resize", () => {
 })
 
 //if scrolled than hide navigation bar
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
+//just for phone devices
+if($(window).width < 1000) {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
 
-  if(scroll > 50) {
-    $("#nav_ul").hide(500);
+    if(scroll > 50) {
+      $("#nav_ul").hide(600);
+    } else if(scroll < 50) {
+      $("#nav_ul").fadeIn(600);
+    }
+  })
+}
+$(window).scroll(function () {
+  var buttonScroll = $(window).scrollTop();
+  if(buttonScroll > 70) {
+    $(".loading_animation").fadeOut();
   }
 })
+while(true) {
+  delay(1000);
+ console.log($(window).scrollTop())
+}
 
-
+//footer swipe up gps_container
+$(".swipe_up_footer").on("click", () => {
+  setTimeout(function() {$(".swipe_up_footer").addClass("swipe_up_footer_animation")}, 0);
+  $(".swipe_up_footer").css({"margin-bottom": "0px"});
+});
 
 //image carousel
 //coordinate slider
