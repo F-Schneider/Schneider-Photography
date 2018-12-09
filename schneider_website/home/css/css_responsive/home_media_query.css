@@ -99,6 +99,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  header nav ul li {
+    font-size: 9px;
+  }
   #backward_carousel {
     opacity: .6;
     left: 0;
@@ -163,7 +166,10 @@
     width: 80%;
   }
   #copyright {
-    font-size: 10px;
+    font-size: 8px;
+  }
+  #contact {
+    font-size: 6px;
   }
 }
 @media only screen and (max-width: 400px) {

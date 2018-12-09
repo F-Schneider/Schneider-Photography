@@ -18,20 +18,18 @@ $(window).on("resize", () => {
 
 //if scrolled than hide navigation bar
 //just for phone devices
-if($(window).width < 1000) {
+if($(window).width() < 1000) {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if(scroll > 50) {
-      $("#nav_ul").hide(600);
-    } else if(scroll < 50) {
-      $("#nav_ul").fadeIn(600);
+    if(scroll > 30) {
+      $("#nav_ul").slideUp(800);
     }
   })
 }
 $(window).scroll(function () {
   var buttonScroll = $(window).scrollTop();
-  if(buttonScroll > 10) {
+  if(buttonScroll > 20) {
     $(".loading_animation").fadeOut(250);
   }
   else {
