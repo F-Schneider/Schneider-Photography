@@ -31,14 +31,14 @@ if($(window).width < 1000) {
 }
 $(window).scroll(function () {
   var buttonScroll = $(window).scrollTop();
-  if(buttonScroll > 70) {
-    $(".loading_animation").fadeOut();
+  if(buttonScroll > 10) {
+    $(".loading_animation").fadeOut(250);
+  }
+  else {
+    $(".loading_animation").fadeIn();
   }
 })
-while(true) {
-  delay(1000);
- console.log($(window).scrollTop())
-}
+
 
 //footer swipe up gps_container
 $(".swipe_up_footer").on("click", () => {

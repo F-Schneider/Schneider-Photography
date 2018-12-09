@@ -1,6 +1,10 @@
 $("#enter").hide()
 $(".loading_animation").hide();
 
+$("html").css({
+  "overflow-y": "hidden",
+})
+
 $(window).on("load", () => {
   $("#enter").addClass("enter_animation_arrive")
   $("#enter").fadeIn()
@@ -10,5 +14,8 @@ $(window).on("load", () => {
     setTimeout(function() {$(".preloader_container").slideUp(1000)}, 800);
     setTimeout(function() {$(".content").addClass("content_fade_in")}, 1800);
     setTimeout(function() {$(".loading_animation").fadeIn(1000)}, 3200);
+    setTimeout(function() {$("html").css({
+      "overflow-y": "",
+    })}, 3100);
   })
 })
