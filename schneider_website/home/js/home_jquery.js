@@ -1,10 +1,16 @@
+window.scrollTo(0, 0);
+$("html").css({
+  "overflow-y": "hidden",
+})
 var animating = false;
 var burger_icon = $("#burger_icon");
-
+var burger_clicked = true;
 //if there is no resize and screen size < 850
 if($(window).width() <= 850) {
   $(burger_icon).on("click", () => {
-    $("#nav_ul").slideToggle(550)
+    if(burger_clicked === true) {$(".current_index_container").hide(500); burger_clicked = false;}
+    else {$(".current_index_container").show(1000); burger_clicked = true;}
+    $("#nav_ul").slideToggle(550);
     })
 } else {
   $("#nav_ul").show();
@@ -24,8 +30,12 @@ if($(window).width() < 1000) {
 
     if(scroll > 30) {
       $("#nav_ul").slideUp(800);
+      $(".current_index_container").show(1000);
+      burger_clicked = true;
     }
   })
+} else {
+  $("#nav_ul").show();
 }
 $(window).scroll(function () {
   var buttonScroll = $(window).scrollTop();

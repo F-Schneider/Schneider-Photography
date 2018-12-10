@@ -150,6 +150,9 @@ html {
   }
 }
 /*content*/
+#main_page {
+  display: block;
+}
 .content {
   display: block;
   background-color: #3d3d3d;
@@ -428,8 +431,8 @@ h2 {
 /*current index -> for image slider*/
 .current_index_container {
   display: block;
-  position: fixed;
-  bottom: 10%;
+  position: absolute;
+  top: 80%;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -458,6 +461,8 @@ footer {
 }
 #footer_container {
   display: block;
+  height: 100%;
+  text-align: center;
 }
 #contact {
   display: block;
@@ -478,7 +483,4 @@ footer {
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   padding: 12px;
-}
-#footer-lign{
-  dislpay
 }
