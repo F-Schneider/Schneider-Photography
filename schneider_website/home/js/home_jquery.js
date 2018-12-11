@@ -1,7 +1,4 @@
-window.scrollTo(0, 0);
-$("html").css({
-  "overflow-y": "hidden",
-})
+
 var animating = false;
 var burger_icon = $("#burger_icon");
 var burger_clicked = true;
@@ -37,15 +34,15 @@ if($(window).width() < 1000) {
 } else {
   $("#nav_ul").show();
 }
-$(window).scroll(function () {
+/*$(window).scroll(function () {
   var buttonScroll = $(window).scrollTop();
-  if(buttonScroll > 20) {
+  if(buttonScroll > 80) {
     $(".loading_animation").fadeOut(250);
   }
   else {
     $(".loading_animation").fadeIn();
   }
-})
+})*/
 
 
 //footer swipe up gps_container
