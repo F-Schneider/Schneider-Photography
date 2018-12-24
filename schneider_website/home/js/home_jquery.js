@@ -175,3 +175,9 @@ $(".current_index").eq(2).click(() => {
   timeout =setInterval(carousel, 5000);
   carousel();
 })
+$(window).scroll(() => {
+  var scrollPosition = $(this).scrollTop();
+  $(".carousel_size").css({
+    "background-size" : 100 + scrollPosition / 8 + "%",
+  })
+})
