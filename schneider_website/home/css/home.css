@@ -172,7 +172,7 @@ html {
   }
 }
 /*HEADER*/
-header {
+header, #intro_text {
   display: block;
   background-color: #262626;
   border-bottom: solid 1px #1c1c1c;
@@ -197,7 +197,7 @@ header {
   color: #424242;
   font-size: 30px;
   line-height: 60px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 #burger_icon_checkbox {
   display: none;
@@ -226,7 +226,7 @@ header nav ul li {
 }
 #nav_login {
   color: #258B8D;
-  background-color: #212121;
+  background-color: #262626;
   border: solid 1px #258B8D;
   border-radius: 5px;
   padding: 5px;

@@ -7,6 +7,7 @@
     <link href="../css/gallery.css" rel="stylesheet">
     <link href="../css/css_responsive/gallery_media_query.css" rel="stylesheet">
     <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -15,86 +16,76 @@
   </head>
   <body>
     <header>
-      <h1 id="header_logo"><a href="../../home/html/home.html">Schneider</a></h1>
+      <div><img id="main_logo" src="../../../schneider_website/pictures/logos/main_logo/Logo_2.png"></div>
+      <!--<h1 id="header_logo"><a href="home.html">Schneider</a></h1>-->
       <nav>
         <label id="burger_icon" for="burger_icon_checkbox">&#9776;</label>
         <input id="burger_icon_checkbox" type="checkbox"/>
         <ul id="nav_ul">
-          <li><a href="../../home/html/home.html">Home</a></li>
-          <li id="nav_gallery"><a href="#">Gallery</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Block</a></li>
-          <li><a href="#" id="nav_login">Login</a></li>
+          <li class="nav_li" id="nav_home"><a href="../../../home.html">Home</a></li>
+          <li class="nav_li"><a href="schneider_website/gallery/html/gallery.html">Gallery</a></li>
+          <li class="nav_li"><a href="#">About us</a></li>
+          <li class="nav_li"><a href="#">Block</a></li>
+          <li class="nav_li"><a href="#" id="nav_login">Login</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div>
-        <div class="filter_container">
-          <ul>
-            <li><a>Landscape</a></li>
-            <li><a>Architecture</a></li>
-            <li><a>Portrait</a></li>
-          </ul>
-        </div>
-        <div class="sidebar_btn">
-          <span id="btn_first"></span>
-          <span id="btn_second"></span>
-          <span id="btn_third"></span>
+      <div class="nature_intro">
+        <div>
+          <div id="intro_text">Nature</div>
         </div>
       </div>
-      <div id="landscape">
-        <div class="wrapper" id="w1">
-          <div class="box one">
-            <div id="carousel_img_06" class="carousel_size"></div>
-          </div>
-          <div class="box two">
-            <div id="carousel_img_03" class="carousel_size"></div>
-          </div>
-          <div class="box three">
-            <div id="carousel_img_01" class="carousel_size"></div>
-          </div>
-          <div class="box four">
-            <div id="carousel_img_04" class="carousel_size"></div>
-          </div>
-          <div class="box five">
-            <div id="carousel_img_09" class="carousel_size"></div>
-          </div>
-        </div>
-        <div class="wrapper" id="w2">
-          <div class="box six">
-            <div id="carousel_img_02" class="carousel_size"></div>
-          </div>
-          <div class="box seven">
-            <div id="carousel_img_10" class="carousel_size"></div>
-          </div>
-          <div class="box eight">
-            <div id="carousel_img_05" class="carousel_size"></div>
-          </div>
-          <div class="box nine">
-            <div id="carousel_img_07" class="carousel_size"></div>
-          </div>
-          <div class="box ten">
-            <div id="carousel_img_11" class="carousel_size"></div>
-          </div>
+      <div class="work">
+        <img class="anim" src="../pictures/nature/P1.jpg" alt="project img">
+        <img class="anim" src="../pictures/nature/P2.jpg" alt="project img">
+        <img class="anim" src="../pictures/nature/P3.jpg" alt="project img">
+        <img class="anim" src="../pictures/nature/P4.jpg" alt="project img">
+      </div>
+      <div class="nature_intro">
+        <div>
+          <div id="intro_text"></div>
         </div>
       </div>
-      <div id="architecture">
+      <div class="city_intro">
+        <div>
+          <div id="intro_text">City</div>
+        </div>
       </div>
+      <div class="work">
+        <img class="anim" src="../pictures/city/P1.jpg" alt="project img">
+        <img class="anim" src="../pictures/city/P2.jpg" alt="project img">
+        <img class="anim" src="../pictures/city/P3.jpg" alt="project img">
+        <img class="anim" src="../pictures/city/P4.jpg" alt="project img">
+      </div>
+      <div class="city_intro">
+        <div>
+          <div id="intro_text"></div>
+        </div>
+      </div>
+     <!--<div class="work2">
+        <img class="anim" src="../pictures/P1.jpg" alt="project img">
+        <img class="anim" src="../pictures/P2.jpg" alt="project img">
+     </div>-->
       <div id="social_media_container">
         <ul class="social_media">
-          <li><img  class="show_social_media" src="../../pictures/logos/social_media_logos/show_social_media.png"></li>
-          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/02_facebook.png"></a></li>
-          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/01_twitter.png"></a></li>
-          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/03_youtube.png"></a></li>
-          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/10_instagram.png"></a></li>
-          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/13_pinterest.png"></a></li>
-          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/14_google+.png"></a></li>
+          <li><img class="show_social_media" src="../../pictures/logos/arrow_logos/arrow_04.png"></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/facebook.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/twitter.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/youtube.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/instagram.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/pinterest.png"></a></li>
+          <li class="social_media_list"><a href="#"><img class="social_media_logos" src="../../pictures/logos/social_media_logos/google+.png"></a></li>
         </ul>
       </div>
     </main>
     <footer>
-
+      <div id="footer_container">
+        <div id="information">
+          <p id="copyright">&copy;2018 Schneider-Photography</p>
+          <p id="contact">Germany, 0711 Stuttgart</p>
+        </div>
+      </div>
     </footer>
     <!--js-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

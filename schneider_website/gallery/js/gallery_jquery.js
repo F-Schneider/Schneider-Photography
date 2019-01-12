@@ -112,7 +112,7 @@ $(".show_social_media").click( () => {
   if(social_clicked === false) {
     $(".social_media_list").slideToggle(350);
     social_clicked = true;
-    $(".show_social_media").css({'transform': 'rotate(180deg)'})
+    $(".show_social_media").css({'transform': 'rotate(-90deg)'})
   } else if (social_clicked === true) {
     $(".social_media_list").slideToggle(350);
     $(".show_social_media").css({'transform': ''})
