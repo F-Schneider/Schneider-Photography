@@ -100,7 +100,7 @@ main {
   font-family: "Poppins";
   width: 100%;
   height: 100%;
-  background-image: url("../../pictures/pictures_gallery/intro_pictures/nature background.JPG");
+  background-image: url("../../pictures/pictures_gallery/intro_pictures/nature_intro.jpg");
   background-color: black;
   background-size: cover;
   background-attachment: fixed;
@@ -110,14 +110,14 @@ main {
   font-family: "Poppins";
   width: 100%;
   height: 100%;
-  background-image: url("../../pictures/pictures_gallery/intro_pictures/city background.JPG");
+  background-image: url("../../pictures/pictures_gallery/intro_pictures/city_background.jpg");
   background-color: black;
   background-size: cover;
   background-attachment: fixed;
 }
 #intro_text {
   color: #fff;
-  font-size: 48px;
+  font-size: 68px;
   padding: 140px 0 180px 80px;
   letter-spacing: 3px;
 }
