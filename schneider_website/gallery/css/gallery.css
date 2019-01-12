@@ -127,11 +127,12 @@ main {
 .work {
   text-align: center;
   width: 100%;
+  margin-top: 0.2%;
 }
 
 .work img {
-  margin: 0.3% 0.3% 0.3% 0.3%;
-  width: 48.3%;
+  margin: 0.3% 0.2% 0.2% 0.2%;
+  width: 49.2%;
 }
 
 /* header2 */
