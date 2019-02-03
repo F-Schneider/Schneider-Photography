@@ -16,57 +16,81 @@
   </head>
   <body>
     <header>
-      <div><img id="main_logo" src="../../../schneider_website/pictures/logos/main_logo/Logo_2.png"></div>
+      <!--<div><img id="main_logo" src="../../../schneider_website/pictures/logos/main_logo/Logo_2.png"></div>-->
       <!--<h1 id="header_logo"><a href="home.html">Schneider</a></h1>-->
       <nav>
         <label id="burger_icon" for="burger_icon_checkbox">&#9776;</label>
         <input id="burger_icon_checkbox" type="checkbox"/>
         <ul id="nav_ul">
-          <li class="nav_li" id="nav_home"><a href="../../../home.html">Home</a></li>
-          <li class="nav_li"><a href="schneider_website/gallery/html/gallery.html">Gallery</a></li>
+          <li class="nav_li"><a href="../../../home.html">Home</a></li>
+          <li class="nav_li" id="nav_gallery"><a href="schneider_website/gallery/html/gallery.html">Gallery</a></li>
           <li class="nav_li"><a href="#">About us</a></li>
           <li class="nav_li"><a href="#">Block</a></li>
-          <li class="nav_li"><a href="#" id="nav_login">Login</a></li>
+          <!--<li class="nav_li"><a href="#" id="nav_login">Login</a></li>-->
+          <button id="nav_login">LOGIN</button>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="nature_intro">
-        <div>
-          <div id="intro_text">Nature</div>
+      <div id="nature_photography">
+        <div class="nature_items" id="krabi">
+          <div class="intro" id="krabi_intro">
+            <div>
+              <div id="intro_text">Nature
+              <p id="intro_text_info">Krabi, Thailand N 8°6'40.195" E 99°6'35.027"</p></div>
+            </div>
+          </div>
+          <div class="work">
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Krabi/P1.jpg" >
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Krabi/P2.jpg" >
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Krabi/P3.jpg" >
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Krabi/P4.jpg" >
+          </div>
+          <div class="intro" id="krabi_intro">
+            <div>
+              <div id="intro_text"></div>
+            </div>
+          </div>
+        </div>
+        <div class="nature_items" id="fuschlsee">
+          <div class="intro" id="fuschlsee_intro">
+            <div>
+              <div id="intro_text">Nature
+              <p id="intro_text_info">Fuschlsee, Austria N 47°47'33.691" E 13°17'58.074"</p></div>
+            </div>
+          </div>
+          <div class="work">
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Fuschlsee/P1.jpg" >
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Fuschlsee/P2.jpg" >
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Fuschlsee/P3.jpg" >
+            <img class="anim" src="../../pictures/pictures_gallery/Nature/Fuschlsee/P4.jpg" >
+          </div>
+          <div class="intro" id="fuschlsee_intro">
+            <div>
+              <div id="intro_text"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="work">
-        <img class="anim" src="../pictures/nature/P1.jpg" >
-        <img class="anim" src="../pictures/nature/P2.jpg" >
-        <img class="anim" src="../pictures/nature/P3.jpg" >
-        <img class="anim" src="../pictures/nature/P4.jpg" >
-      </div>
-      <div class="nature_intro">
-        <div>
-          <div id="intro_text"></div>
+      <div id="city_photography">
+        <div class="intro" id="lisbon_intro">
+          <div>
+            <div id="intro_text">City
+            <p id="intro_text_info">Lisbon, Portugal N 38°42'27.902" W 9°8'11.730"</div>
+          </div>
+        </div>
+        <div class="work">
+          <img class="anim" src="../../pictures/pictures_gallery/City/Lisbon/P1.jpg" >
+          <img class="anim" src="../../pictures/pictures_gallery/City/Lisbon/P2.jpg" >
+          <img class="anim" src="../../pictures/pictures_gallery/City/Lisbon/P3.jpg" >
+          <img class="anim" src="../../pictures/pictures_gallery/City/Lisbon/P4.jpg" >
+        </div>
+        <div class="intro" id="lisbon_intro">
+          <div>
+            <div id="intro_text"></div>
+          </div>
         </div>
       </div>
-      <div class="city_intro">
-        <div>
-          <div id="intro_text">City</div>
-        </div>
-      </div>
-      <div class="work">
-        <img class="anim" src="../pictures/city/P1.jpg" >
-        <img class="anim" src="../pictures/city/P2.jpg" >
-        <img class="anim" src="../pictures/city/P3.jpg" >
-        <img class="anim" src="../pictures/city/P4.jpg" >
-      </div>
-      <div class="city_intro">
-        <div>
-          <div id="intro_text"></div>
-        </div>
-      </div>
-     <!--<div class="work2">
-        <img class="anim" src="../pictures/P1.jpg" alt="project img">
-        <img class="anim" src="../pictures/P2.jpg" alt="project img">
-     </div>-->
       <div id="social_media_container">
         <ul class="social_media">
           <li><img class="show_social_media" src="../../pictures/logos/arrow_logos/arrow_04.png"></li>
@@ -89,6 +113,8 @@
     </footer>
     <!--js-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="../js/gallery_jquery.js"></script>
   </body>
 </html>

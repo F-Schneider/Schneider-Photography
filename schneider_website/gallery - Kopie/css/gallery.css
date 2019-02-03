@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  vertical-align: baseline;
+  font-size: 100%;
+  color: #848484;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Quicksand" , sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  background: #262626;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+/*header*/
+header {
+  display: block;
+  background-color: #262626;
+  border-bottom: solid 1px #1c1c1c;
+  position: sticky;
+  text-transform: uppercase;
+  top: 0%;
+  padding: 10px;
+}
+h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+#header_logo, #header_logo a{
+  margin: 0 auto;
+  color: #258B8D;
+  font-family: 'Montserrat', sans-serif;
+}
+#main_logo {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+}
+/*burger_icon*/
+#burger_icon {
+  display: none;
+  margin: 0 auto;
+  color: #424242;
+  font-size: 30px;
+  line-height: 60px;
+  margin-top: 24px;
+}
+#burger_icon_checkbox {
+  display: none;
+  float: right;
+  margin-top: -40px;
+}
+/*header navigation bar*/
+header nav {
+  text-align: right;
+}
+header nav ul {
+  list-style: none;
+  margin: 10px  0px 10px 10px;
+}
+header nav ul li {
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 0 5px;
+}
+#nav_home a {
+  border-bottom: solid 1px #444444;
+}
+#nav_home a:hover {
+  border-bottom: solid 1px #258B8D;
+}
+#nav_login {
+  color: #258B8D;
+  background-color: #262626;
+  border: solid 1px #258B8D;
+  border-radius: 5px;
+  padding: 5px;
+}
+header nav ul li a {
+  padding: 3px 15px;
+}
+header nav ul li a:hover {
+  border-bottom: solid 1px #258B8D;
+}
+/*main*/
+main {
+
+}
+.anim { transition: ease transform 10s;
+overflow: hidden;
+}
+/*@keyframes anim {
+  0% { }
+  100% { width: 130%; }
+}*/
+.intro {
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+#krabi_intro {
+  background-image: url("../../pictures/pictures_gallery/Nature/Krabi/Intro.jpg");
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+#fuschlsee_intro {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../pictures/pictures_gallery/Nature/Fuschlsee/Intro.jpg");
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#lisbon_intro {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../pictures/pictures_gallery/City/Lisbon/Intro.jpg");
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#intro_text {
+  color: #fff;
+  font-size: 68px;
+  padding: 140px 0 180px 80px;
+  letter-spacing: 3px;
+}
+#intro_text_info {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#black_background {
+
+}
+.work {
+  text-align: center;
+  width: 100%;
+  margin-top: 0.2%;
+}
+
+.work img {
+  margin: 0.3% 0.2% 0.2% 0.2%;
+  width: 49.2%;
+}
+
+#black_box {
+  display: inline-block;
+  background-color: black;
+  width: 48%;
+  right: 0;
+}
+/* header2 */
+
+.header2 {
+  margin: 130px 0 80px 40px;
+}
+
+/* .work2 */
+.work2 {
+  width: 100%;
+  text-align: center;
+}
+
+.work2 img {
+  margin: 1%;
+  width: 99%;
+}
+
+/* footer */
+footer {
+  height: 30px;
+  background-color:  white;
+}
+footer p {
+  text-align: center;
+  color: grey;
+  margin: 60px auto;
+}
+#social_media_container {
+  margin: none;
+}
+.social_media {
+  list-style: none;
+  position: fixed;
+  bottom: 1%;
+  left: 0%;
+  margin: 0 auto;
+  padding: 0;
+}
+.social_media_list{
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+.social_media_logos {
+  width: 36px;
+  height: 36px;
+}
+.show_social_media {
+  width: 36px;
+  height: 36px;
+  margin-bottom: -4px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+/*FOOTER*/
+footer {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  text-transform: uppercase;
+  background-color: #262626;
+}
+#footer_container {
+  display: block;
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+#information {
+  height: 100%;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+#contact {
+  display: block;
+  margin: 0 auto;
+  color: #848484;
+  letter-spacing: 5px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 8px;
+  padding: 12px;
+  width: 30%;
+}
+#copyright {
+  display: block;
+  margin: 0 auto;
+  color: #848484;
+  letter-spacing: 5px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  padding: 12px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+
+      .work img {
+            margin: 2%;
+            width: 90%;
+      }
+
+      .header2 {
+            margin: 130px 0 40px 12px;
+      }
+
+      .header2 h1 {
+            font-size: 36px;
+      }
+
+      .header2 p {
+            font-size: 12px;
+            width: 90%;
+      }
+
+      .work2 img {
+            margin: 2%;
+      }
+}
+
+#nature_photography {
+  display: block;
+}
+.intro {
+  animation: slide 12s infinite;
+}
+.intro:nth-child(1) {
+  background-image: url("../../pictures/city/P1.jpg");
+  left: 0%;
+  animation-delay: -1s;
+}
+slide:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url("../pictures/pictures_gallery/Nature/Krabi/Intro.jpg");
+}
+slide:nth-child(3) {
+  animation-delay: 2s;
+    background-image: url("../../pictures/pictures_gallery/Nature/Krabi/Intro.jpg");
+}
+
+/*ANIMATION<*/
+@keyframes slide {
+  0% { left: 100%; width: 100%;}
+  5% { left: 0%;}
+  25% { left: 0%;}
+  30% {left: -100%; width: 100%;}
+  31% {left: -100%; width: 0%;}
+  100% {left: 100%; width: 0%;}
+}

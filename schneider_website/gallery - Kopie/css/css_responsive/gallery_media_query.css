@@ -1,0 +1,46 @@
+@media only screen and (min-width: 1500px) {
+  header nav ul li a {
+    margin: 0 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header nav ul li a {
+    margin: 0 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header nav ul {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  header {
+    padding: 15px 10px 0 20px;
+  }
+  #burger_icon {
+    display: block;
+    cursor: pointer;
+  }
+  header nav {
+    margin-top: -54px;
+  }
+  #nav_ul {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    line-height: 60px;
+    padding: 5px;
+    border-top: solid 1px #2d2d2d;
+  }
+  header nav ul li  {
+    display: block;
+    margin: 0;
+  }
+  header nav ul li a {
+    margin: 0 10px;
+  }
+  #burger_icon_checkbox:checked + #nav_ul {
+    display: block;
+  }
+}
