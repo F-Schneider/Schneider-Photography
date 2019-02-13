@@ -3,6 +3,7 @@
   color: #848484;
 }
 html, body {
+  display: block;
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -150,9 +151,6 @@ html {
   }
 }
 /*content*/
-#main_page {
-  display: block;
-}
 .content {
   display: block;
   background-color: #3d3d3d;
@@ -179,17 +177,15 @@ header {
   position: sticky;
   top: 0%;
   padding: 10px;
+  z-index: 1000;
 }
-#header_logo, #header_logo a{
-  margin: 0 auto;
-  color: #258B8D;
-  font-family: 'Montserrat', sans-serif;
+
+#heading {
+  float: left;
+  font-size: 25px;
+  margin-left: 20px;
 }
-#main_logo {
-  margin: 0 auto;
-  width: 250px;
-  text-align: center;
-}
+
 /*burger_icon*/
 #burger_icon {
   display: none;
@@ -251,7 +247,7 @@ header nav ul li a {
 header nav ul li a:after {
   content: '';
   display: block;
-  border-bottom: 2px solid #444444;
+  border-bottom: 1px solid #444444;
   width: 0;
   bottom: -1px;
   position: absolute;
@@ -266,6 +262,11 @@ header nav ul li a:hover:after {
 /*MAIN*/
 /*carousel images*/
 
+#main_page {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
 main {
   display: flex;
   height: 100%;
@@ -488,13 +489,12 @@ footer {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  position: relative;
-  top: 90vh;
 }
 #footer_container {
   display: block;
   height: 100%;
   text-align: center;
+  position: relative;
 }
 #contact {
   display: block;
@@ -504,7 +504,6 @@ footer {
   font-family: 'Quicksand', sans-serif;
   font-size: 8px;
   padding: 12px;
-
   width: 30%;
 }
 #copyright {

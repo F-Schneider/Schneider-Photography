@@ -10,11 +10,7 @@ function show_list(name) {
 }
 
 //function for hiding the navigation bar
-function hide_list(name) {
-  if(animating) return;
-  animating = true,
-  $(name).fadeOut(200, () => {animating = false; })
-}
+
 //Nature Carousel
 
 //resize function
@@ -45,5 +41,23 @@ $(".show_social_media").click( () => {
   }
 });
 
+var $page = $(".page");
+$(".open_close").on("click", () => {
+  $page.toggleClass("shazam");
+});
 
+$(".CONTENT").on("click", () => {
+  $page.removeClass("shazam");
+})
+
+
+$(".open").on("click", () => {
+  $(".menu_items").addClass("ani_class");
+})
+
+
+
+$(window).scroll( () => {
+  $(".scroller").css("top", $(this).scrollTop())
+})
 //SLIDER

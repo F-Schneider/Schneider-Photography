@@ -58,14 +58,14 @@
 }
 @media only screen and (max-width: 850px) {
   header {
-    padding: 10px 10px 0 20px;
+    padding: 20px 10px 0 10px;
   }
   #burger_icon {
     display: block;
     cursor: pointer;
-  }
-  header nav {
-    margin-top: -54px;
+    height: 50px;
+    margin: 0;
+    line-height: 100%;
   }
   #nav_ul {
     display: none;
@@ -106,9 +106,6 @@
   #main_logo {
     width: 180px;
     margin-bottom: -18px;
-  }
-  header nav ul li {
-    font-size: 9px;
   }
   #backward_carousel {
     opacity: .6;
@@ -156,10 +153,6 @@
     height: 30px;
     width: 30px;
   }
-  footer {
-    margin-top: 70px;
-    height: 70px;
-  }
   #contact {
     width: 80%;
     padding: 5px 0 0 0;
@@ -167,6 +160,13 @@
   #copyright {
     font-size: 10px;
     padding: 15px 0 5px 0;
+  }
+  footer {
+    height: 70px;
+  }
+  #footer_container {
+    height: 80px;
+    margin-top: -20px;
   }
 }
 @media only screen and (max-width: 450px) {

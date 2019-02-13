@@ -2,6 +2,9 @@
 var animating = false;
 var burger_icon = $("#burger_icon")
 
+//categorie hide
+$("#categories").hide();
+
 //function for appending the navigation bar
 function show_list(name) {
   if(animating) return;
@@ -43,4 +46,56 @@ $(".show_social_media").click( () => {
     $(".show_social_media").css({'transform': ''})
     social_clicked = false;
   }
+});
+
+
+//photography categories
+
+
+$("#show_categories").on("click", () => {
+  $("#categories").slideToggle();
+  $(".social_media").slideToggle();
+})
+
+//scroll to categorie
+var city = document.getElementById("city_photography");
+$("#city_cat").on("click", () => {
+  city.scrollIntoView();
+})
+
+var nature = document.getElementById("nature_photography");
+$("#nature_cat").on("click", () => {
+  nature.scrollIntoView(true, {behavior: "smooth"});
+})
+
+
+//scrollbar
+$(".categorie_h").hide();
+$(window).on("scroll", () => {
+  var scroll = $(window).scrollTop();
+  if(scroll > 260 ) {
+    $(".categorie_h").fadeIn();
+  } else {
+    $(".categorie_h").slideUp();
+  }
+})
+
+$(document).on('scroll', function() {
+    if($(this).scrollTop() *1.15 >=$('#city_photography').position().top){
+        $(".categorie_h").text("city");
+    } else {
+      $(".categorie_h").text("nature");
+    }
+})
+
+
+$(window).on("scroll", () => {
+
+    var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+
+    var stickyHeight = $('.categorie_h').height();
+
+    var marginTop = (($(window).height() - stickyHeight) / 100) * scrollPercent * 0.9;
+
+    $('.categorie_h').css('marginTop', marginTop);
 });
