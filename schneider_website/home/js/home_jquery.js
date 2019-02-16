@@ -1,4 +1,5 @@
 
+alert("upload_98");
 var animating = false;
 var burger_icon = $("#burger_icon");
 var burger_clicked = true;
