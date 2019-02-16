@@ -2,10 +2,10 @@
 alert("upload_100");
 
 $("html").css({
-  "height": "calc(100vh + 71px)";
+  "height": "calc(100vh + 71px)",
 })
 $("body").css({
-  "height": "calc(100vh + 71px)";
+  "height": "calc(100vh + 71px)",
 })
 var animating = false;
 var burger_icon = $("#burger_icon");
