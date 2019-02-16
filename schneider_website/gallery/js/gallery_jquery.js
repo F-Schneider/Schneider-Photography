@@ -1,22 +1,15 @@
-//hamburger button 01
 var animating = false;
-var burger_icon = $("#burger_icon")
-
-//categorie hide
-$("#categories").hide();
-
-//function for appending the navigation bar
-function show_list(name) {
-  if(animating) return;
-  animating = true;
-  $(name).fadeIn(500, () => {animating = false; })
-}
-
-//function for hiding the navigation bar
-function hide_list(name) {
-  if(animating) return;
-  animating = true,
-  $(name).fadeOut(200, () => {animating = false; })
+var burger_icon = $("#burger_icon");
+var burger_clicked = true;
+//if there is no resize and screen size < 850
+if($(window).width() <= 850) {
+  $(burger_icon).on("click", () => {
+    if(burger_clicked === true) {$(".current_index_container").hide(500); burger_clicked = false;}
+    else {$(".current_index_container").show(1000); burger_clicked = true;}
+    $("#nav_ul").slideToggle(550);
+    })
+} else {
+  $("#nav_ul").show();
 }
 //Nature Carousel
 

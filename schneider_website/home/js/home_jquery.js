@@ -34,16 +34,6 @@ if($(window).width() < 1000) {
 } else {
   $("#nav_ul").show();
 }
-/*$(window).scroll(function () {
-  var buttonScroll = $(window).scrollTop();
-  if(buttonScroll > 80) {
-    $(".loading_animation").fadeOut(250);
-  }
-  else {
-    $(".loading_animation").fadeIn();
-  }
-})*/
-
 
 //footer swipe up gps_container
 $(".swipe_up_footer").on("click", () => {
@@ -78,8 +68,8 @@ function carousel() {
     current_index = $(".current_index")[slideIndex-1];
     $(current_index).css({
       "background-color": "rgba(255, 255, 255, 0.6)",
-      "width": "9px",
-      "height": "9px",
+      "width": "11px",
+      "height": "11px",
       "border": "none",
     });
 

@@ -8,11 +8,13 @@
   color: #848484;
   text-decoration: none;
 }
-
+#website {
+  overflow-x: hidden;
+}
 html {
   font-family: "Quicksand" , sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+
 }
 body {
   width: 100%;

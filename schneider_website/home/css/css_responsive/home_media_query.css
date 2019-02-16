@@ -71,7 +71,6 @@
     display: none;
     margin: 0 auto;
     text-align: center;
-    font-size: 13px;
     line-height: 60px;
     padding: 5px;
     border-top: solid 1px #2d2d2d;
@@ -82,6 +81,18 @@
   }
   header nav ul li a {
     margin: 0 10px;
+  }
+  header nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    bottom: -1px;
+    position: absolute;
+    border-bottom: none;
+    left: 0;
+  }
+
+  header nav ul li a:hover:after {
   }
   #burger_icon_checkbox:checked + #nav_ul {
     display: block;
@@ -131,28 +142,6 @@
   main:hover #backward_carousel {
     transform: none;
   }
-  .gps_icon {
-    height: 32px;
-    width: 32px;
-  }
-  .gps_container {
-    height: 30px;
-  }
-  .coordinates {
-    margin-top: 14px;
-  }
-  .show_social_media {
-    height: 30px;
-    width: 30px;
-  }
-  .social_media_logos {
-    height: 30px;
-    width: 30px;
-  }
-  .social_media_list {
-    height: 30px;
-    width: 30px;
-  }
   #contact {
     width: 80%;
     padding: 5px 0 0 0;
@@ -174,10 +163,10 @@
     width: 80%;
   }
   #copyright {
-    font-size: 8px;
+    font-size: 12x;
   }
   #contact {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 @media only screen and (max-width: 400px) {

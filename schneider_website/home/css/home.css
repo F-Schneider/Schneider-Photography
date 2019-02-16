@@ -465,7 +465,8 @@ h2 {
 .current_index_container {
   display: block;
   position: absolute;
-  top: 80%;
+  top: 90vh;
+  width: 30%;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -477,8 +478,8 @@ h2 {
   cursor: pointer;
   display: inline-block;
   margin: 8px;
-  height: 7px;
-  width: 7px;
+  height: 9px;
+  width: 9px;
   border: solid 1px rgba(255, 255, 255);
   border-radius: 50%;
 }
