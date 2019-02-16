@@ -14,6 +14,12 @@ $(window).on("load", () => {
   $("#enter").addClass("enter_animation_arrive")
   $("#enter").fadeIn()
   $("#enter").on("click", function animating() {
+    $("html").css({
+      "background-color": "#262626",
+    })
+    $("body").css({
+      "background-color": "#262626",
+    })
     $("#main_page").show();
     $("#enter").addClass("enter_animation_leave");
     $(".outer_ellipse_thin").addClass("ellipse_animation_leave");
