@@ -4,8 +4,13 @@ var burger_clicked = true;
 //if there is no resize and screen size < 850
 if($(window).width() <= 850) {
   $(burger_icon).on("click", () => {
-    if(burger_clicked === true) {$(".current_index_container").hide(500); burger_clicked = false;}
-    else {$(".current_index_container").show(1000); burger_clicked = true;}
+    if(burger_clicked === true) {
+      $(".current_index_container").hide(500); burger_clicked = false;
+      $(".categorie_h").hide(500);
+    }
+    else {
+      $(".current_index_container").show(1000); burger_clicked = true;
+    }
     $("#nav_ul").slideToggle(550);
     })
 } else {
@@ -27,6 +32,24 @@ $(window).resize(function() {
    $("#nav_ul").show();
   }
 });
+
+//if scrolled than hide navigation bar
+//just for phone devices
+if($(window).width() < 1000) {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if(scroll > 30) {
+      $("#nav_ul").slideUp(800);
+      $(".current_index_container").show(1000);
+      burger_clicked = true;
+    }
+  })
+} else {
+  $("#nav_ul").show();
+}
+
+
 //social media
 var social_clicked = false;
 $(".show_social_media").click( () => {
@@ -66,15 +89,15 @@ $("#nature_cat").on("click", () => {
 $(".categorie_h").hide();
 $(window).on("scroll", () => {
   var scroll = $(window).scrollTop();
-  if(scroll > 260 ) {
+  if(scroll > 800 ) {
     $(".categorie_h").fadeIn();
   } else {
-    $(".categorie_h").slideUp();
+    $(".categorie_h").fadeOut();
   }
 })
 
 $(document).on('scroll', function() {
-    if($(this).scrollTop() *1.15 >=$('#city_photography').position().top){
+    if($(this).scrollTop() *1.13 >=$('#city_photography').position().top){
         $(".categorie_h").text("city");
     } else {
       $(".categorie_h").text("nature");

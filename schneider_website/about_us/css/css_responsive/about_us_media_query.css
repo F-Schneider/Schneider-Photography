@@ -1,0 +1,195 @@
+
+@media only screen and (min-width: 1800px) {
+  .content_h1 {
+    letter-spacing: 70px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  header nav ul li a {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .content_h1 {
+    font-size: 250px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header nav ul li a {
+    margin: 0 20px;
+  }
+  header nav ul li a:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #444444;
+  width: 0;
+  bottom: -1px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 1s ease;
+  transition: .6s ease;
+}
+
+  header nav ul li a:hover:after {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  .content_h1 {
+    font-size: 210px;
+    letter-spacing: 15px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav ul {
+    margin-right: 10px;
+  }
+  .content_h1 {
+    font-size: 150px;
+    letter-spacing: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+
+  header {
+    padding: 20px 10px 0 10px;
+  }
+  #heading {
+    line-height: 35px;
+  }
+  #burger_icon {
+    display: block;
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    line-height: 100%;
+  }
+  #nav_ul {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    padding: 5px;
+    border-top: solid 1px #2d2d2d;
+  }
+  header nav ul li  {
+    display: block;
+    margin: 0;
+  }
+  header nav ul li a {
+    margin: 0 10px;
+  }
+  header nav ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    bottom: -1px;
+    position: absolute;
+    border-bottom: none;
+    left: 0;
+  }
+
+  header nav ul li a:hover:after {
+  }
+  #burger_icon_checkbox:checked + #nav_ul {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .content_h1 {
+    top: 20%;
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+  .input_header {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    footer {
+      height: 70px;
+    }
+    #copyright {
+      width: 100%;
+      padding: 0;
+      font-size: 10px;
+    }
+    #contact {
+      width: 80%;
+      font-size: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+  #login .content_h1 {
+    top: 23%;
+  }
+  #register .content_h1 {
+    top: 18%;
+  }
+  .mail {
+    width: 280px;
+    height: 37px;
+  }
+  .password {
+    width: 280px;
+    height: 37px;
+  }
+  .buttons {
+    top: 78%;
+  }
+  .user_button {
+    height: 30px;
+  }
+
+  #password_strength {
+    top: 73%;
+    width: 250px;
+  }
+  #password_strength * {
+    width: 80px;
+  }
+
+  #mail_reg_header {
+    top: 23%;
+  }
+  #register_mail {
+    top: 28%;
+  }
+
+  #register #pw_repeat_header {
+    top: 58%;
+  }
+  #register_repeat_password {
+    top: 63%;
+  }
+  .log_reg_switch {
+    height: 25px;
+    bottom: 5%;
+    width: 230px;
+  }
+  #log_switch_l {
+    height: 25px;
+  }
+  #reg_switch_r {
+    height: 25px;
+  }
+  .switch_p_current {
+    line-height: 25px;
+    font-size: 12px;
+  }
+  .switch_p {
+    line-height: 25px;
+    font-size: 12px;
+  }
+}

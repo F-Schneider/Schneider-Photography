@@ -1,6 +1,4 @@
 
-alert("upload_101");
-
 $("html").css({
   "height": "calc(100vh + 71px)",
 })
@@ -150,7 +148,7 @@ var gps_clicked = false;
    }
  })
 
- //Coordinates slider
+ //current image index
 $(".current_index").eq(0).click(() => {
   slideIndex = 0;
   clearTimeout(timeout);

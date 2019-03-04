@@ -350,7 +350,7 @@ h2 {
 }
 /*loading_animation for button appending after preloading*/
 .loading_animation{
-  display: block;
+  display: none;
 }
 /*gps coordinates*/
 .gps_container {
@@ -448,7 +448,7 @@ h2 {
 
 /*current index -> for image slider*/
 .current_index_container {
-  display: block;
+  display: none;
   position: absolute;
   top: 90vh;
   width: 30%;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<div id="website">
+  <html>
+    <head>
+      <title>Schneider-Photography</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--css-->
+      <link href="../css/about_us.css" rel="stylesheet">
+      <link href="../css/css_responsive/about_us_media_query.css" rel="stylesheet">
+      <!--fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <h id="heading">schneider</h>
+          <label id="burger_icon" for="burger_icon_checkbox">&#9776;</label>
+          <input id="burger_icon_checkbox" type="checkbox"/>
+          <ul id="nav_ul">
+            <li class="nav_li"><a href="../../../home.html">Home</a></li>
+            <li class="nav_li" id="nav_gallery"><a href="../../../schneider_website/gallery/html/gallery.html">Gallery</a></li>
+            <li class="nav_li"><a href="#">About us</a></li>
+            <li class="nav_li"><a href="#">Shop</a></li>
+            <button id="nav_login">LOGIN</button>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <video autoplay muted loop class="background-video">
+          <source src="../../pictures/videos_login/krabi_rain.mp4">
+        </video>
+        <div id="content">
+          <div id="login">
+            <h1 class="content_h1">login</h1>
+
+            <h class="input_header" id="mail_header">e - mail</h>
+            <input class="mail" id="login_mail"></input>
+
+            <h class="input_header" id="pw_header">password</h>
+            <input class="password" id="login_password" type="password"></input>
+
+            <div class="log_reg_switch">
+              <div id="log_switch_l"><p class="switch_p_current">Login</p></div>
+              <div id="reg_switch_l"><p class="switch_p">Register</p></div>
+            </div>
+
+            <div class="buttons">
+              <button class="user_button" id="login_button">Login</button>
+            </div>
+          </div>
+          <div id="register">
+            <h1 class="content_h1">Register</h1>
+
+            <h class="input_header" id="mail_reg_header">e - mail</h>
+            <input class="mail" id="register_mail"></input>
+
+            <h class="input_header" id="pw_reg_header">password</h>
+            <input class="password" id="register_password" type="password"></input>
+
+            <h class="input_header" id="pw_repeat_header">repeat password</h>
+            <input class="password" id="register_repeat_password" type="password"></input>
+
+            <div id="password_strength">
+              <div id="red_strength"></div>
+              <div id="yellow_strength"></div>
+              <div id="green_strength"></div>
+            </div>
+
+            <div class="buttons">
+              <button class="user_button" id="register_button">Register</button>
+            </div>
+
+            <div class="log_reg_switch">
+              <div id="log_switch_r"><p class="switch_p_current">Login</p></div>
+              <div id="reg_switch_r"><p class="switch_p">Register</p></div>
+            </div>
+
+          </div>
+      </main>
+
+      <!--js-->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <!--GSAP-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+      <script src="../js/about_us_jquery.js"></script>
+      <script src="../js/password_strength.js"></script>
+    </body>
+  </html>
+</div>

@@ -32,20 +32,21 @@ header {
   display: block;
   background-color: #262626;
   border-bottom: solid 1px #1c1c1c;
-  position: sticky;
+  position: fixed;
   text-transform: uppercase;
   top: 0%;
-  padding: 10px;
+  width: 100%;
+  padding-right: 10px;
   z-index: 1000;
 }
 #heading {
   float: left;
   font-size: 25px;
+  line-height: 50px;
   margin-left: 20px;
 }
 h1 {
   position: relative;
-  top: 18px;
   left: 10px;
 }
 
@@ -63,6 +64,8 @@ h1 {
   font-size: 30px;
   line-height: 60px;
   margin-top: 24px;
+  position: relative;
+  right: 5%;
 }
 
 #burger_icon_checkbox {
@@ -78,13 +81,14 @@ header nav {
 
 header nav ul {
   list-style: none;
-  margin: 10px  0px 10px 10px;
+  margin: 10px  10px 10px 10px;
 }
 
 header nav ul li {
   display: inline-block;
   letter-spacing: 1px;
   font-size: 12px;
+  line-height: 50px;
   margin: 0 5px;
 }
 
@@ -164,11 +168,9 @@ header nav ul li a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-transform:translatez(0);
-    background-position: 50% 30%
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #intro_text {
@@ -181,6 +183,10 @@ header nav ul li a {
 #intro_text_info {
   margin-top: 20px;
   font-size: 20px;
+}
+
+#mobile_br {
+  display: none;
 }
 
 .categorie_h {

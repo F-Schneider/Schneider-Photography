@@ -6,6 +6,7 @@ $("#website").hide();
 $("#enter").hide()
 $(".loading_animation").hide();
 $(".current_index_container").hide();
+
 $(document).ready(function() {
   $("html").animate({scrollTop: 0}, 100); //100ms for example
 });
@@ -26,8 +27,8 @@ $(window).on("load", () => {
     setTimeout(function() {$(".preloader_container").slideUp(1000)}, 800);
     setTimeout(function() {$("#website").fadeIn(1800)}, 1500);
     setTimeout(function() {$(".content").addClass("content_fade_in")}, 1800);
-    setTimeout(function() {$(".loading_animation").fadeIn(1000)}, 3200);
-    setTimeout(function() {$(".current_index_container").fadeIn(1000)}, 3200);
+    setTimeout(function() {$(".loading_animation").fadeIn(1000)}, 3000);
+    setTimeout(function() {$(".current_index_container").fadeIn(1000)}, 3000);
     setTimeout(function() {$("html").css({
       "overflow-y": "",
     })}, 3100);
